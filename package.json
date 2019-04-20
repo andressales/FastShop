@@ -1,0 +1,22 @@
+{
+  "name": "fastshop",
+  "version": "1.0.0",
+  "description": "Teste Técnico Fast Shop",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andressales/FastShop.git"
+  },
+  "keywords": [
+    "angularjs"
+  ],
+  "author": "andre sales",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andressales/FastShop/issues"
+  },
+  "homepage": "https://github.com/andressales/FastShop#readme"
+}
