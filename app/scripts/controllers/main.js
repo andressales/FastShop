@@ -8,10 +8,19 @@
  * Controller of the fastshopApp
  */
 angular.module('fastshopApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+  .controller('MainCtrl', [
+    '$scope', 
+    'themoviedbService', 
+    function ($scope, themoviedbService) {
+      $scope.movies = [];
+      themoviedbService.listMovie().get()
+      .$promise.then(
+        function(response){
+          $scope.movies = response.results;
+        },
+        function(response){
+          scope.message = 'Error: ' + response.status + ' ' + response.statusText;
+        }
+      );
+    }
+  ]);

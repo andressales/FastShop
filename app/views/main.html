@@ -1,4 +1,24 @@
-<div class="jumbotron">
+<div class="container mainpage"></div>
+  <div class="row row-content" data-ng-controller="MainCtrl">
+      <div class="col-xs-12 col-md-6" ng-repeat="movie in movies">
+          <div class="media">
+            <div class="media-left">
+              <a href="#">
+                <!-- <img class="media-object img-thumbnail" src="{{ movie.poster_path }}" alt="{{ movie.title }}" /> -->
+              </a>
+            </div>
+            <div class="media-body">
+              <h2 class="media-heading">{{ movie.title }}
+                <span class="label label-danger">{{ movie.popularity }}</span>
+                <span class="badge">{{ movie.vote_average }}</span>
+              </h2>
+              <p>{{ movie.overview }}</p>
+            </div>
+          </div>  
+      </div>
+  </div>
+</div>
+<!-- <div class="jumbotron">
   <h1>'Allo, 'Allo!</h1>
   <p class="lead">
     <img src="images/yeoman.png" alt="I'm Yeoman"><br>
@@ -20,4 +40,4 @@
 
   <h4>Karma</h4>
   <p>Spectacular Test Runner for JavaScript.</p>
-</div>
+</div> -->
