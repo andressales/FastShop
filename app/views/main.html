@@ -1,10 +1,10 @@
-<div class="container mainpage"></div>
+<!-- <div class="container mainpage"></div> -->
   <div class="row row-content" data-ng-controller="MainCtrl">
       <div class="col-xs-12 col-md-6" ng-repeat="movie in movies">
           <div class="media">
             <div class="media-left">
               <a href="#">
-                <!-- <img class="media-object img-thumbnail" src="{{ movie.poster_path }}" alt="{{ movie.title }}" /> -->
+                <img class="media-object img-thumbnail" src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/{{movie.poster_path}}" alt="{{ movie.title }}" height="200" />
               </a>
             </div>
             <div class="media-body">
@@ -14,10 +14,10 @@
               </h2>
               <p>{{ movie.overview }}</p>
             </div>
-          </div>  
+          </div>
       </div>
   </div>
-</div>
+<!-- </div> -->
 <!-- <div class="jumbotron">
   <h1>'Allo, 'Allo!</h1>
   <p class="lead">
