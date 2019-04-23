@@ -3,7 +3,7 @@
       <div class="panel panel-default">
         <div class="panel-body">
             <div class="media">
-                <div class="media-left">
+                <div class="media-left animated flipInY delay-1s">
                   <a href="#">
                     <img class="media-object img-thumbnail img-responsive img-poster-main" src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/{{movie.poster_path}}" alt="{{ movie.title }}" height="200" />
                   </a>
@@ -13,7 +13,7 @@
                     <span class="label label-danger">{{ movie.popularity }}</span>
                     <span class="badge">{{ movie.vote_average }}</span>
                   </h2>
-                  <p class="text-justify">{{ movie.overview }}</p>
+                  <p class="text-justify truncate">{{ movie.overview }}</p>
                 </div>
             </div>
         </div>
