@@ -21,7 +21,7 @@ img.img-poster-main {
   display: block;
   max-width: 100%;
   height: 340px;
-  
+  transition: transform .5s ease,box-shadow .5s ease;
 }
 
 div.easy-chart{
