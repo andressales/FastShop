@@ -1,43 +1,22 @@
-<!-- <div class="container mainpage"></div> -->
-  <div class="row row-content" data-ng-controller="MainCtrl">
-      <div class="col-xs-12 col-md-6" ng-repeat="movie in movies">
-          <div class="media">
-            <div class="media-left">
-              <a href="#">
-                <img class="media-object img-thumbnail" src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/{{movie.poster_path}}" alt="{{ movie.title }}" height="200" />
-              </a>
+<div class="row row-content" data-ng-controller="MainCtrl">
+    <div class="col-xs-12 col-md-6" ng-repeat="movie in movies">
+      <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="media">
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object img-thumbnail img-responsive img-poster-main" src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/{{movie.poster_path}}" alt="{{ movie.title }}" height="200" />
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h2 class="media-heading"><div class="easy-chart" easypiechart options="options" ng-attr-percent="percent(movie.vote_average)" title="{{movie.vote_average}}"></div>{{ movie.title }}
+                    <span class="label label-danger">{{ movie.popularity }}</span>
+                    <span class="badge">{{ movie.vote_average }}</span>
+                  </h2>
+                  <p class="text-justify">{{ movie.overview }}</p>
+                </div>
             </div>
-            <div class="media-body">
-              <h2 class="media-heading">{{ movie.title }}
-                <span class="label label-danger">{{ movie.popularity }}</span>
-                <span class="badge">{{ movie.vote_average }}</span>
-              </h2>
-              <p>{{ movie.overview }}</p>
-            </div>
-          </div>
+        </div>
       </div>
-  </div>
-<!-- </div> -->
-<!-- <div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
+    </div>
 </div>
-
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
-
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
-
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
-</div> -->

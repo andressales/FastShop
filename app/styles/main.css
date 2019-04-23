@@ -17,10 +17,22 @@ body {
   padding-right: 15px;
 }
 
-img {
+img.img-poster-main {
   display: block;
   max-width: 100%;
-  height: auto;
+  height: 340px;
+  
+}
+
+div.easy-chart{
+  display: inline-block;
+  padding: 0px 10px 0px 0px;
+
+}
+div.consensus div.outer_ring {
+    border-radius: 50%;
+    padding: 4px;
+    background-color: #081c22
 }
 
 /* Custom page header */

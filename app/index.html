@@ -33,6 +33,19 @@
           </div>
         </div>
       </div>
+      <div class="search_bar">
+          <section class="search">
+            <div class="sub_media">
+              <form id="search_form" action="/search?language=pt-BR" method="get" accept-charset="utf-8">
+                
+                <input type="hidden" name="language" value="pt-BR">
+                
+                <span tabindex="-1" role="presentation" class="k-widget k-autocomplete k-header k-autocomplete-clearable k-state-default" style=""><input dir="auto" id="search_v4" name="query" type="text" tabindex="0" autocorrect="off" autofill="off" autocomplete="off" spellcheck="false" placeholder="Buscar por um Filme, Série ou Pessoa" value="Captain Marvel" data-role="autocomplete" class="k-input" role="textbox" aria-haspopup="true" aria-disabled="false" aria-readonly="false" aria-owns="search_v4_listbox" aria-autocomplete="list"><span unselectable="on" class="k-icon k-clear-value k-i-close" title="clear" role="button" tabindex="-1"></span><span class="k-icon k-i-loading" style="display:none"></span></span>
+                <input type="submit" disabled="">
+              </form>
+            </div>
+          </section>
+      </div>
     </div>
 
     <div ng-view="" class="container mainpage"></div>
@@ -65,6 +78,7 @@
         <script src="../bower_components/angular-messages/angular-messages.min.js"></script>
         <script src="../bower_components/angular-sanitize/angular-sanitize.min.js"></script>
         <script src="../bower_components/angular-touch/angular-touch.min.js"></script>
+        <script src="../bower_components/jquery.easy-pie-chart/dist/angular.easypiechart.min.js"></script>
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/services/themoviedbService.js"></script>
