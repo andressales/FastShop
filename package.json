@@ -1,9 +1,6 @@
 {
-  "name": "fastshop",
+  "name": "andre-sales-fastshop-test",
   "private": true,
-  "scripts": {
-    "start": "node app.js"
-  },
   "devDependencies": {
     "autoprefixer-core": "^5.2.1",
     "grunt": "^0.4.5",
