@@ -3,13 +3,13 @@ const path = require('path');
 
 const app = express();
 
-app.use(express.static(__dirname+ '/app'));
+app.use(express.static(__dirname));
 
 
 app.get('/*', function(req,res){
     console.log(req);
     console.log(__dirname);
-    res.sendFile(path.join(__dirname+'/app/index.html'));
+    res.sendFile(path.join(__dirname +'/app/index.html'));
 });
 
 
