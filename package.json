@@ -1,6 +1,9 @@
 {
   "name": "andre-sales-fastshop-test",
   "private": true,
+  "scripts": {
+    "postinstall": "bower install"
+   },
   "devDependencies": {
     "autoprefixer-core": "^5.2.1",
     "grunt": "^0.4.5",
