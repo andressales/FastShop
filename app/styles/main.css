@@ -7,6 +7,10 @@
 
 body {
   padding: 0;
+  background-position: 20% 2%;
+  background-color: #072327;
+  background-image: url(https://www.themoviedb.org/assets/2/v4/footers_v2/Furious7-d0f17d0793c58d83056a64d22157c9aff5ffb4c179b60048264e5158916fec22.jpg);
+  background-repeat: no-repeat;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
